@@ -8,9 +8,11 @@
     background-color: #FF900E;
     font-size: 1.25rem;
     padding: 15px 20px;
+    text-align: center;
     border-radius:10px;
     color: #ffffff
     ;
+    font-weight: 600;
     cursor: pointer;
     border: 0;
   
@@ -77,4 +79,44 @@ nav li a{
   header{
     padding: 50px;
   }
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* team styles */
+.team-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:1.2rem;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.team-containt{
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.team-title{
+  font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.our{
+  color: #727272;
+}
+.features{
+  color: #FF900E;
+}
+.team-discription{
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px
 }
