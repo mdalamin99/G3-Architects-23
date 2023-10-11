@@ -85,6 +85,7 @@ main{
   max-width: 1440px;
   margin: 0 auto;
 }
+
 /* team styles */
 .team-container{
   display: flex;
@@ -103,7 +104,7 @@ main{
   padding-left: 70px;
 }
 .team-title{
-  font-size: 45px;
+  font-size: 2.8rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -111,7 +112,7 @@ line-height: normal;
 .our{
   color: #727272;
 }
-.features{
+.text-features{
   color: #FF900E;
 }
 .team-discription{
@@ -119,4 +120,25 @@ line-height: normal;
 font-style: normal;
 font-weight: 400;
 line-height: 26px
+}
+@media screen and (max-width:576px) {
+  .team-container{
+    flex-direction:column;
+    
+  }
+  .team-img-container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+  .team-container{
+    flex-direction:column;
+  }
+  .team-img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
 }
